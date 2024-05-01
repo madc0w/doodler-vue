@@ -2,7 +2,7 @@ cd ..
 call npm run build
 del /s /q ..\vue-github-deploy-dist\*
 xcopy dist ..\vue-github-deploy-dist /s /e
-git checkout deployment
+@REM git checkout deployment
 @REM del /s /q js\*
 @REM del /s /q css\*
 @REM xcopy ..\vue-github-deploy-dist . /s /e /y
