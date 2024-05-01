@@ -1,5 +1,5 @@
 cd ..
-npm run build
+call npm run build
 del /s /q ..\vue-github-deploy-dist\*
 xcopy dist ..\vue-github-deploy-dist /s /e
 git checkout gh-pages
