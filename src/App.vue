@@ -1,5 +1,5 @@
 <template>
-	<div>oooooooooo</div>
+	<div>wwwwwwwww</div>
 </template>
 
 <script>
