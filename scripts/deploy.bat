@@ -8,3 +8,4 @@ git add .
 git commit -a
 git push
 git checkout master
+cd scripts
