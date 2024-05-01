@@ -1,5 +1,5 @@
 <template>
-	<div>wwwwwwwww</div>
+	<div>wowowo</div>
 </template>
 
 <script>
