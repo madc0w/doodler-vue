@@ -568,21 +568,31 @@ export default {
 		},
 
 		repaint() {
-			const imageDimensions = {
-				width: this.previewCanvas.width,
-				height: (this.img.height * this.previewCanvas.width) / this.img.width,
-			};
+			// const imageDimensions = {
+			// 	width: this.previewCanvas.width,
+			// 	height: (this.img.height * this.previewCanvas.width) / this.img.width,
+			// };
+			// this.previewContext.drawImage(
+			// 	this.img,
+			// 	0,
+			// 	0,
+			// 	imageDimensions.width,
+			// 	imageDimensions.height
+			// );
+			this.previewCanvas.width = this.img.width;
+			this.previewCanvas.height = this.img.height;
+			this.inputCanvas.width = this.img.width;
+			this.inputCanvas.height = this.img.height;
+			this.outputCanvas.width = this.img.width;
+			this.outputCanvas.height = this.img.height;
+
 			this.previewContext.drawImage(
 				this.img,
 				0,
 				0,
-				imageDimensions.width,
-				imageDimensions.height
+				this.previewCanvas.width,
+				this.previewCanvas.height
 			);
-			this.inputCanvas.setAttribute('width', this.img.width);
-			this.inputCanvas.setAttribute('height', this.img.height);
-			this.outputCanvas.setAttribute('width', this.img.width);
-			this.outputCanvas.setAttribute('height', this.img.height);
 
 			this.inputContext.drawImage(
 				this.img,
