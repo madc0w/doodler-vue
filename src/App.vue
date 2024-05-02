@@ -1,5 +1,5 @@
 <template>
-	<div>omg omg</div>
+	<div>British Miniatures R US</div>
 </template>
 
 <script>
