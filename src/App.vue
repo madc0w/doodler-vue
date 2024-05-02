@@ -1,10 +1,27 @@
 <template>
-	<div>British Miniatures R US</div>
+	<div>Doodler</div>
 </template>
 
 <script>
+import cannyEdgeDetector from 'canny-edge-detector';
+import Image from 'image-js';
+
+// const gaussianSigmaDefault = 1.1;
+// const black = '#000000';
+// const white = '#ffffff';
+
+// const hysteresisThresholds = {
+// 	low: 10,
+// 	high: 30,
+// };
+
 export default {
 	name: 'App',
+
+	created() {
+		console.log('cannyEdgeDetector', cannyEdgeDetector);
+		console.log('Image', Image);
+	},
 };
 </script>
 
